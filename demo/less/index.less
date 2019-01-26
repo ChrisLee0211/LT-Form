@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+// 通用样式
+.fl(){
+    float: left;
+}
+.fr(){
+    float: right;
+}
+.input-style(){
+    width: 200px;
+    height: 20px;
+}
+
+// header区域
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        width: 7%;
+        height: 100%;
+        margin-right: 5px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%
+        }
+    }
+    .head-title{
+        width: 20%;
+        height: 100%;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+        span{
+            font-size: 15px;
+            color: grey
+        }
+    }
+    .head-nav{
+        width: 33%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 15px;
+        :nth-child(1),:nth-child(2){
+            a{
+                color: rgb(251,116,3)
+            }
+        }
+        :nth-child(3){
+            cursor: pointer;
+            height: 40px;
+            line-height: 40px;
+            &:hover{
+                color: rgb(251,116,3);
+                ~ .user-info{
+                    display: block
+                }
+            }
+            
+        }
+
+    }
+    .mobile-style{
+        width: 7%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            display: block;
+            width: 18px;
+            height: 35px;
+        }
+        p{
+            font-size: 15px;
+            cursor: pointer;
+            &:hover{
+                color: rgb(251,116,3)
+            }
+        }
+    }
+}
+.user-info{
+    width: 155px;
+    height: 330px;
+    border: 1px solid rgb(251,116,3);
+    position: absolute;
+    right: 300px;
+    top: 70px;
+    background-color: white;
+    display: none;
+     &:hover{
+            display: block
+        }
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-indent: 15px;
+        font-size: 13px;
+        color: grey;
+       
+        li{
+            width:90%;
+            height: 20px;
+            cursor: pointer;
+            &:hover{
+                color: black
+            }
+        }
+        :nth-child(2),:nth-child(3),:nth-child(5),:nth-child(6),:nth-child(8),:nth-child(9){
+            border-bottom: 1px solid gray;
+        }
+        
+    }
+}
+// 表单填写区域
+.form-base{
+    width: 100%;
+    height: 800px;
+    border-top: 2px solid rgb(36,135,201);
+    border-bottom: 2px solid rgb(36,135,201);
+    .nav-addr{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-indent: 220px
+    };
+    .form-body{
+        width: 71%;
+        height: 80%;
+        margin-left: 220px;
+        border: 1px solid rgb(251,116,3);
+        border-radius: 10px;
+        .form-head{
+            width:100%;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 15px;
+            background-color: rgb(251,116,3);
+            color: white;
+            border-radius: 10px;
+            font-size: 20px
+        }
+        .form-detail{
+            width: 100%;
+            height: 500px;
+            margin-top:80px;
+            .form{
+                width: 100%;
+                height: 100%;
+                .form-item{
+                    width: 100%;
+                    height: 8%;
+                    .form-label{
+                        .fl();
+                        width: 35%;
+                        height: 100%;
+                        text-align: right;
+                        font-size: 15px;
+                        line-height: 40px;
+                        span{
+                            color: red
+                        }
+                    }
+                    .input{
+                        .fl();
+                        width: 20%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        input{
+                            .input-style()
+                        }
+                        select{
+                            .input-style()
+                        }
+                    }
+                    .tips{
+                        .fl();
+                        width: 45%;
+                        height: 100%;
+                        color: rgb(251,116,3);
+                        text-indent: 10px;
+                        line-height: 40px;
+                        // 密码强度
+                        .danger,.normal,.safe{
+                            width: 50px;
+                            height: 10px;
+                            background: gray;
+                            margin-top: 15px;
+                            margin-left: 10px;
+                            .fl()
+                        }
+                        .danger{
+                            background-color: red
+                        }
+                    }
+                    // 姓名规则
+                    .name-rule{
+                        .fl();
+                        width: 45%;
+                        height: 100%;
+                        text-indent: 10px;
+                        line-height: 40px;
+                        color: rgb(251,116,3);
+                        position: relative;
+                        cursor: pointer;
+                        span:hover ~ .name-tips{
+                            display: block
+                        }
+
+                    }
+                }
+                .form-check{
+                    box-sizing: border-box;
+                    padding-left: 330px;
+                }
+                .form-submit{
+                    width:250px;
+                    height: 50px;
+                    background: rgb(251,116,3);
+                    margin: 30px auto;
+                    color: white;
+                    border-radius: 10px;
+                    text-align: center;
+                    line-height: 50px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgb(36,135,201)
+                    }
+                }
+            }
+        }
+    }
+}
+//姓名规则
+.name-tips{
+    width: 600px;
+    height: 300px;
+    border: 1px solid rgb(36,135,201);
+    background: white;
+    padding: 10px 10px;
+    position: absolute;
+    left: 70px;
+    top:35px;
+    display: none;
+    p{
+        text-indent: 10px;
+        line-height: 40px;
+        color: gray;
+        font-size: 15px
+    }
+}
+// footer部分
+footer{
+    width: 100%;
+    height: 80px;
+    background: #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 13px;
+    color: gray;
+    .about{
+        text-align: center;
+        margin:10px 0;
+    }
+    .tail{
+        text-align: center
+    }
+}

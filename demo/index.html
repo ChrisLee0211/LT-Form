@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="head-title">
+            慕课高铁客户服务中心&nbsp;|&nbsp;<span>客户服务</span>
+        </div>
+        <nav class="head-nav">
+            <p>意见反馈&nbsp; <a href="#">imooc@com</a></p>
+            <p>您好，请&nbsp;<a href="">登录</a>&nbsp;|&nbsp; <a href="">注册</a></p>
+            <p class="user"><span>我的IMOOC</span>&nbsp;▼
+                <div class="user-info">
+                    <ul>
+                        <li>未完成订单</li>
+                        <li>已完成订单（改/退）</li>
+                        <li>我的保险</li>
+                        <li>查看个人信息</li>
+                        <li>账户安全</li>
+                        <li>常用联系人</li>
+                        <li>重点旅客预约</li>
+                        <li>遗失物品查找</li>
+                        <li>服务查询</li>
+                        <li>投诉</li>
+                        <li>建议</li>
+                    </ul>
+                </div>
+            </p>
+        </nav>
+
+        <div class="mobile-style">
+            <img src="img/未标题-1.png" alt="">
+            <p>手机版</p>
+        </div>
+    </header>
+    <!-- 表单填写区 -->
+    <section class="form-base">
+        <!-- 所在位置 -->
+        <div class="nav-addr">
+            您现在的位置：
+            <a href="">客运首页</a>
+            >
+            <a href="">注册</a>
+        </div>
+        <!-- 表单内容 -->
+        <div class="form-body">
+            <div class="form-head">账户信息</div>
+            <div class="form-detail">
+                <form class="form" action="">
+                    <!-- 用户名 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="username"><span class="needed">*</span>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="username" id="username" placeholder="用户名设置成功后不可修改">
+                        </div>
+                        <div class="tips username">6-30位字母、数字或"_",以字母开头</div>
+                    </div>
+                    <!-- 登录密码 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="pwd"><span class="needed">*</span>登录密码：</label>
+                        </div>
+                        <div class="input">
+                            <input type="password" id="pwd" name="pwd" placeholder="6-20位字母、数字或符号">
+                        </div>
+                        <div class="tips">
+                            <div id="danger" class="danger"></div>
+                            <div id="normal" class="normal"></div>
+                            <div id="safe" class="safe"></div>
+                        </div>
+                    </div>
+                    <!-- 确认密码 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="confirm"><span class="needed">*</span>确认密码：</label>
+                        </div>
+                        <div class="input">
+                            <input type="password" id="confirm" name="confirm" placeholder="再次输入您的登录密码">
+                        </div>
+                        <div class="tips confirm"></div>
+                    </div>
+                    <!-- 姓名 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="named"><span class="needed">*</span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" id="named" name="named" placeholder="请输入姓名">
+                        </div>
+                        <div class="name-rule"><span>姓名填写规则&nbsp;&nbsp;</span><span class="named"></span>
+                            <div class="name-tips">
+                                <p>1.确认姓名中生僻字无法输入时，可用生僻字拼音或同音字替代。</p>
+                                <p>2.输入姓名保存后，遇有系统无法正确显示的汉字，可用该汉子的拼音或同音字重新修改后保存。</p>
+                                <p>3.姓名中有繁体字无法输入时，可用简体替代。</p>
+                                <p>4.姓名较长，汉字与英文字符合计超过30个（1个汉子算2个字符）的，需按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符（空格字符不输入），其中英文字符输入时不去别大小写</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 身份证类型 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="id-type"><span class="needed">*</span>证件类型：</label>
+                        </div>
+                        <div class="input">
+                            <select name="id-type" id="id-type">
+                                <option value="id-card">二代身份证</option>
+                                <option value="H&M-card">港澳通行证</option>
+                                <option value="Taiwan-card">台灣通行证</option>
+                                <option value="passport">护照</option>
+                            </select>
+                        </div>
+                        <div class="tips"></div>
+                    </div>
+                    <!-- 身份证号码 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="identity"><span class="needed">*</span>证件号码：</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="identity" id="identity" placeholder="请输入您的证件号码">
+                        </div>
+                        <div class="tips identity"></div>
+                    </div>
+                    <!-- 邮箱 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="email"><span class="needed">*</span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="请正确填写邮箱地址" name="email" id="email">
+                        </div>
+                        <div class="tips email"></div>
+                    </div>
+                    <!-- 手机号码 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="mobile"><span class="needed">*</span>手机号码：</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="mobile" id="mobile" placeholder="请输入您的手机号码">
+                        </div>
+                        <div class="tips mobile">请填写正确的手机号码，稍后将向该手机号码发送短信验证码</div>
+                    </div>
+                    <!-- 旅客类型 -->
+                    <div class="form-item">
+                        <div class="form-label">
+                            <label for="passenger"><span class="needed">*</span>旅客类型：</label>
+                        </div>
+                        <div class="input">
+                            <select name="passenger" id="passenger">
+                                <option value="adult">成人</option>
+                                <option value="child">儿童</option>
+                                <option value="student">学生</option>
+                                <option value="army">残疾军人</option>
+                                <option value="cop">残疾人民警察</option>
+                            </select>
+                        </div>
+                        <div class="tips"></div>
+                    </div>
+                    <!-- 条款 -->
+                    <div class="form-check">
+                        <input type="checkbox" id="agreebox" value="agree" name="agreebox">
+                        我已阅读并同意遵守<a href="">《中国铁路客户服务中心网站服务条款》</a>
+                    </div>
+                    <!-- 提交按钮 -->
+                    <div class="form-submit" id="btn">下一步</div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer>
+        <div class="about">
+            <a href="">关于我们</a>|
+            <a href="">网站声明</a>
+        </div>
+        <div class="tail">
+            Copyright&nbsp;&copy;&nbsp;2017&nbsp;imooc.com&nbsp;All&nbsp;Rights&nbsp;Reserved&nbsp;|&nbsp;京ICP备&nbsp;13046642号-2
+        </div>
+    </footer>
+    <script src="js/LT-form.js"></script>
+    <script>
+        var username = document.getElementById("username");
+        var user_tips = document.querySelector(".username")
+
+        var pwd = document.getElementById("pwd");
+        var pwd_danger = document.getElementById("danger");
+        var pwd_normal = document.getElementById("normal");
+        var pwd_safe = document.getElementById("safe");
+
+        var confirm = document.getElementById("confirm");
+        var confirm_tips = document.querySelector(".confirm");
+
+        var named = document.getElementById("named");
+        var named_tips = document.querySelector(".named");
+
+        var identity = document.getElementById("identity");
+        var identity_tips = document.querySelector(".identity");
+
+        var email = document.getElementById("email");
+        var email_tips = document.querySelector(".email");
+
+        var mobile = document.getElementById("mobile");
+        var mobile_tips = document.querySelector(".mobile");
+
+        var agreebox = document.getElementById("agreebox");
+        var btn = document.getElementById("btn");
+
+        var formCheck = new formCheck()
+
+        formCheck.userCheck(username, user_tips)
+        formCheck.pwdCheck(pwd, pwd_danger, pwd_normal, pwd_safe)
+        formCheck.nameCheck(named, named_tips)
+        formCheck.pwdConfirm(confirm, pwd, confirm_tips)
+        formCheck.identityCheck(identity, identity_tips)
+        formCheck.emailCheck(email, email_tips)
+        formCheck.mobileCheck(mobile, mobile_tips)
+
+        btn.addEventListener("click", function () {
+            var passList = formCheck.passList()
+            if (passList.length == 7) {
+                if (agreebox.checked == true) {
+                    window.location.replace("http://www.imooc.com")
+                } else {
+                    alert("请勾选同意协议")
+                }
+            } else {
+                alert("请填写正确的信息")
+            }
+        })
+
+    </script>
+</body>
+
+</html>
