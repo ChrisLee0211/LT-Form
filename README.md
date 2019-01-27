@@ -59,7 +59,7 @@ formCheck.userCheck(username, user_tips)
 |:------------- |:-------------|:-----|
 | userCheck(dom,tips) |**参数1**：验证字段的dom对象；**参数2**：字段提示的dom对象 | 验证用户名是否合法 |
 | pwdCheck(a,b,c,d) |**参数1**：密码字段的dom对象；**参数2-4**：密码级别块状dom元素：危险、一般、安全 | 验证密码是否合法 |
-| pwdConfirm(a,b,c) |**参数1**：确认密码字段的dom对象；**参数2**：注册密码的dom对象；*参数3*：字段提示的dom对象 | 验证用户名是否合法 |
+| pwdConfirm(a,b,c) |**参数1**：确认密码字段的dom对象；**参数2**：注册密码的dom对象；**参数3**：字段提示的dom对象 | 验证用户名是否合法 |
 | nameCheck(named, named_tips) |**参数1**：验证字段的dom对象；**参数2**：字段提示的dom对象 | 验证姓名是否合法 |      
 | identityCheck(identity, identity_tips) |**参数1**：验证字段的dom对象；**参数2**：字段提示的dom对象 | 验证身份证号是否合法 |      
 | emailCheck(email, email_tips) |**参数1**：验证字段的dom对象；**参数2**：字段提示的dom对象 | 验证邮箱是否合法 |      
