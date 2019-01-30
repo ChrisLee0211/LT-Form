@@ -223,9 +223,9 @@ var listOperate = {
         }
     },
     removeToPass: function (name) {
-        if (passList.indexOf(name)) {
-            var atttIndex = passList.indexOf(name);
-            passList.splice(atttIndex, 1)
+        if (passList.indexOf(name) != -1) {
+            var attrIndex = passList.indexOf(name);
+            passList.splice(attrIndex, 1)
         } else {
             return
         }
